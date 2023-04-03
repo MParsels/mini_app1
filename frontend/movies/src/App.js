@@ -15,11 +15,16 @@ const App = () => {
   
 
   return (
+    <>
     <div className="container -fluid movie_app">
     <div className='row'>
     <MovieList movies={movies} />
       </div>
     </div>
+    <Routes>
+      <Route path='/'element={< Home />}></Route>
+    </Routes>
+    </>
   );
 }
 
